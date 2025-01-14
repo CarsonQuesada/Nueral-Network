@@ -1,0 +1,8 @@
+﻿  Matrix.cpp
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(11,12): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(11,36): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(23,20): warning C4018: '<': signed/unsigned mismatch
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(24,21): warning C4018: '<': signed/unsigned mismatch
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(33,20): warning C4018: '<': signed/unsigned mismatch
+C:\ECE\3101 Grader\Neural Network\Math\Matrix.cpp(34,21): warning C4018: '<': signed/unsigned mismatch
+  Neural Network.vcxproj -> C:\ECE\3101 Grader\Neural Network\x64\Debug\Neural Network.exe
