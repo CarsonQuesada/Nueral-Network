@@ -1,0 +1,10 @@
+^C:\PROGRAMMING\NEURAL NETWORK\BUILD\CMAKEFILES\AF5FBB2F026AEF18C0E0700EC3916B4D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Programming/Neural Network" "-BC:/Programming/Neural Network/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Programming/Neural Network/build/NeuralNetwork.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
