@@ -2,10 +2,10 @@
 
 #include "Math/Matrix.h"
 
-class NueralNetwork
+class NeuralNetwork
 {
 public:
-	NueralNetwork(unsigned int inputNodes, unsigned int hiddenNodes, unsigned int outputNodes, float learningRate);
+	NeuralNetwork(unsigned int inputNodes, unsigned int hiddenNodes, unsigned int outputNodes, float learningRate);
 
 	void Train(const std::vector<float>& inputList, const std::vector<float>& targetList);
 	std::vector<float> Query(const std::vector<float>& input);

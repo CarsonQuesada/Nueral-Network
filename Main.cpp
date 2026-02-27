@@ -2,32 +2,32 @@
 #include <string>
 
 #include "DataSet.h"
-#include "NueralNetwork.h"
+#include "NeuralNetwork.h"
 
 #define TRAINING_SET_SIZE 100
 #define TESTING_SET_SIZE 10
 
 int main()
 {
-	NueralNetwork nueralNetwork(SAMPLE_DATA_SIZE, 100, TARGET_SIZE, 0.2f);
+	NeuralNetwork neuralNetwork(SAMPLE_DATA_SIZE, 100, TARGET_SIZE, 0.2f);
 	std::string trainingDataLoc = "DataSets/TrainingData100.csv";
 	std::string testingDataLoc = "DataSets/TestingData10.csv";
 
 	DataSet trainingData(trainingDataLoc, TRAINING_SET_SIZE);
 
-	// Train nueral network
+	// Train neural network
 	for (Sample sample : trainingData)
 	{
-		nueralNetwork.Train(std::vector<float>(sample.data.begin(), sample.data.end()), sample.TargetList());
+		neuralNetwork.Train(std::vector<float>(sample.data.begin(), sample.data.end()), sample.TargetList());
 	}
 
 	DataSet testingData(testingDataLoc, TESTING_SET_SIZE);
 
-	// Test nueral network
+	// Test neural network
 	int correctCount = 0;
 	for (Sample sample : testingData)
 	{
-		std::vector<float> outputs = nueralNetwork.Query(std::vector<float>(sample.data.begin(), sample.data.end()));
+		std::vector<float> outputs = neuralNetwork.Query(std::vector<float>(sample.data.begin(), sample.data.end()));
 
 		// Find index of highest output
 		float prevHigh = -1.0f;

@@ -1,10 +1,10 @@
-#include "NueralNetwork.h"
+#include "NeuralNetwork.h"
 
 #include <random>
 
 #include "Math/Math.h"
 
-NueralNetwork::NueralNetwork(unsigned int inputNodes, unsigned int hiddenNodes, unsigned int outputNodes, float learningRate)
+NeuralNetwork::NeuralNetwork(unsigned int inputNodes, unsigned int hiddenNodes, unsigned int outputNodes, float learningRate)
 	:mInputNodes(inputNodes), mHiddenNodes(hiddenNodes), mOutputNodes(outputNodes), mLearningRate(learningRate), mWeightsI2H(Matrix(hiddenNodes, inputNodes)), mWeightsH2O(Matrix(outputNodes, hiddenNodes))
 {
 	std::random_device rd;  // Obtain a random number from hardware
@@ -20,7 +20,7 @@ NueralNetwork::NueralNetwork(unsigned int inputNodes, unsigned int hiddenNodes, 
 			mWeightsH2O(i, j) = dis(gen);
 }
 
-void NueralNetwork::Train(const std::vector<float>& inputList, const std::vector<float>& targetList)
+void NeuralNetwork::Train(const std::vector<float>& inputList, const std::vector<float>& targetList)
 {
 	// Basically Query function but needs to be written out becuase we need access to hiddenInput ///////
 	// Turn input vector into a single column Matrix
@@ -58,7 +58,7 @@ void NueralNetwork::Train(const std::vector<float>& inputList, const std::vector
 	mWeightsI2H += WeightAdjustment;
 }
 
-std::vector<float> NueralNetwork::Query(const std::vector<float>& input)
+std::vector<float> NeuralNetwork::Query(const std::vector<float>& input)
 {
 	// Turn input vector into a single column Matrix
 	Matrix inputMatrix(input.size(), 1);
