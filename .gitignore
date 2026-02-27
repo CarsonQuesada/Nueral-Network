@@ -1,0 +1,19 @@
+# Build output
+out/
+
+# CMake build directories
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE
+.vs/
+.idea/
+*.vcxproj*
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
