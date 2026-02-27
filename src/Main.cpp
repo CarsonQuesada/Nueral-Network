@@ -10,8 +10,8 @@
 int main()
 {
 	NeuralNetwork neuralNetwork(SAMPLE_DATA_SIZE, 100, TARGET_SIZE, 0.2f);
-	std::string trainingDataLoc = "DataSets/TrainingData100.csv";
-	std::string testingDataLoc = "DataSets/TestingData10.csv";
+	std::string trainingDataLoc = "data/TrainingData100.csv";
+	std::string testingDataLoc = "data/TestingData10.csv";
 
 	DataSet trainingData(trainingDataLoc, TRAINING_SET_SIZE);
 

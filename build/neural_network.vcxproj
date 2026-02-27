@@ -117,7 +117,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/DataSets" "C:/Programming/Neural Network/out/bin/Debug/DataSets"
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/data" "C:/Programming/Neural Network/out/bin/Debug/data"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -173,7 +173,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/DataSets" "C:/Programming/Neural Network/out/bin/Release/DataSets"
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/data" "C:/Programming/Neural Network/out/bin/Release/data"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -229,7 +229,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/DataSets" "C:/Programming/Neural Network/out/bin/MinSizeRel/DataSets"
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/data" "C:/Programming/Neural Network/out/bin/MinSizeRel/data"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -284,7 +284,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/DataSets" "C:/Programming/Neural Network/out/bin/RelWithDebInfo/DataSets"
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Programming/Neural Network/data" "C:/Programming/Neural Network/out/bin/RelWithDebInfo/data"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
