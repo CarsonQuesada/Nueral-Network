@@ -76,11 +76,3 @@ This project demonstrates:
 * Forward propagation
 * Backpropagation
 * Basic dataset handling in C++
-It is not optimized for performance, scalability, or production use.
-
----
-
-If you want, I can also produce:
-* A shorter version
-* A more formal version for a portfolio
-* Or a version that highlights specific implementation details (e.g., math layer, matrix class design)
